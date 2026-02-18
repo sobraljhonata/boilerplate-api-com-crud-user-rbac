@@ -57,8 +57,8 @@ npm pkg set scripts.copy:swagger="copyfiles -u 2 \"src/docs/**/*\" dist/docs" &&
 npm pkg set scripts.test="NODE_ENV=test jest --passWithNoTests --silent --noStackTrace --runInBand" && \
 npm pkg set scripts.test:verbose="NODE_ENV=test jest --passWithNoTests --runInBand" && \
 npm pkg set scripts.test:clear="npx jest --clearCache" && \
-npm pkg set scripts.test:unit="npm test -- --watch -c jest-unit-config.ts" && \
-npm pkg set scripts.test:integration="npm test -- --watch -c jest-integration-config.js" && \
+npm pkg set scripts.test:unit="npm test -- --watchAll -c jest-unit-config.ts" && \
+npm pkg set scripts.test:integration="npm test -- --watchAll -c jest-integration-config.js" && \
 npm pkg set scripts.test:staged="npm test -- --findRelatedTests" && \
 npm pkg set scripts.test:ci="npm test -- --coverage"
 
